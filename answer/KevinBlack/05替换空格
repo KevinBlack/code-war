@@ -1,0 +1,11 @@
+var replaceSpace = function(s) {
+    let ret = '';
+    for (let item of s) {
+        if (item == " ") {
+            ret += "%20";
+        } else {
+            ret += item;
+        }
+    }
+    return ret;
+};
